@@ -1,0 +1,24 @@
+@import url("main.css");
+@import url("header.css");
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+}
+
+:root{
+    --bisque: rgb(240, 235, 227);
+    --grey: rgb(121, 118, 114);
+    --darkgrey: #4e4c4a;
+}
+footer{
+    height: 50px;
+    text-align: center;
+    line-height: 50px;
+    background-color: var(--darkgrey);
+    color: var(--bisque);
+    border-top: 0.5px var(--grey) solid;
+}
