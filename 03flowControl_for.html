@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        // for迴圈==計數器迴圈，最後的增量值是重新指定原本的i
+        // 次數從i算到條件為止的範圍，比如i=0，0就算第一次。
+        for (var i = 1; i <= 10; i += 4) {
+            document.write("<p>Hi</p>");
+            document.write(i);
+        }
+        document.write("<hr>");
+        // for (var h = 1; h <= 100; h++) {
+        //     for (var i = 1; i <= 6; i++) {
+        //         document.write("<h" + i + ">Welcome to my page</h" + i + ">")
+        //     }
+        // }
+        // 99乘法表，巢狀迴圈==執行外乘內的次數
+        for (var j = 1; j <= 9; j++) {
+            for (var i = 1; i <= 9; i++) {
+                document.write(j+"*"+ i +"=" +j*i +"<br>");
+            }
+            document.write("<hr>");
+        }
+        // 算1+到1000
+        var sum = 0;
+        for (var j = 1; j <= 3; j++) {
+            sum += j;
+        }
+        document.write(sum);
+        document.write("<hr>");
+        // 算奇數
+        var sum1 = 0;
+        for (var i = 1; i <= 3; i += 2) {
+            sum1 += i;
+        }
+        document.write(sum1);
+        document.write("<hr>");
+
+        // 每代入一次i就要檢查k是否等於94。
+        var a, b;
+        2 * (35 - b) + 4 * b == 94;
+        var k = 0;
+        for (var b = 1; b <= 35; b++) {
+            k = 2 * (35 - b) + 4 * b;
+            if (k == 94) {
+                document.write("兔子為" + b + "，雞為" + (35 - b));
+                break;
+            }
+        }
+
+
+        
+    </script>
+</body>
+
+</html>
