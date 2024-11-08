@@ -51,6 +51,7 @@ public class Demo {
         c21.drawShape();
         sq21.drawShape();
         c22.drawShape();
+        // c22.showCircleColor(); 不能叫子類別的方法
 
         System.out.println("============================================================");
 

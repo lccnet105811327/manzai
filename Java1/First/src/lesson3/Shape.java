@@ -22,6 +22,7 @@ public class Shape {
 		System.out.println("Draw a shape.");
 	}
     //因為Shape、Circle在同一包(lesson3)內，所以即使此方法設為protected，子類別新增的物件可以直接circle.showProtected()呼叫父類別的此方法
+	//原本protected的範圍只能讓子類別運用，子類別新增的物件不能直接呼叫。
     protected void showProtected(){
         System.out.println("show protected.");
     }

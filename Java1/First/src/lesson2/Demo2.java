@@ -16,7 +16,7 @@ public class Demo2 {
         Circle moon2 = new Circle(5,3);
         moon2.show_area();
         Loop n1 = new Loop(5);
-        System.out.println(n1.r);
+        n1.paint();
 
         Bank1 myBank1 = new Bank1();
         System.out.println(myBank1.getMoney());
