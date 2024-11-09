@@ -9,6 +9,13 @@
             "name": "Demo",
             "request": "launch",
             "mainClass": "lesson5.Demo",
+            "projectName": "First_6d824759"
+        },
+        {
+            "type": "java",
+            "name": "Demo",
+            "request": "launch",
+            "mainClass": "lesson5.Demo",
             "projectName": "First_7b798fbc"
         },
         {
