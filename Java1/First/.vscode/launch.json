@@ -6,6 +6,13 @@
     "configurations": [
         {
             "type": "java",
+            "name": "PaymentSystem",
+            "request": "launch",
+            "mainClass": "test.PaymentSystem",
+            "projectName": "First_6d824759"
+        },
+        {
+            "type": "java",
             "name": "Demo",
             "request": "launch",
             "mainClass": "lesson5.Demo",

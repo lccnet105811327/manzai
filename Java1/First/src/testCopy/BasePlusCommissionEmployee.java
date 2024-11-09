@@ -1,4 +1,4 @@
-package test;
+package testCopy;
 
 public class BasePlusCommissionEmployee extends CommissionEmployee {
 
@@ -7,22 +7,22 @@ public class BasePlusCommissionEmployee extends CommissionEmployee {
     }
 
     @Override
-    public double earnings() {
+    public void earnings() {
         double earnings = super.getGrossSales() * super.getCommissionRate() + super.getBaseSalery();
-        return earnings;
+        System.out.println("未扣稅所得: " + earnings);
     }
 
     @Override
-    public double getTax() {
+    public void getTax() {
         double tax = (super.getGrossSales() * super.getCommissionRate() + super.getBaseSalery()) * 0.05;
-        return tax;
+        System.out.println("取得稅額: " + tax);
     };
 
     @Override
-    public double getPaymentAmount() {
+    public void getPaymentAmount() {
         double earnings = super.getGrossSales() * super.getCommissionRate() + super.getBaseSalery();
         double tax = (super.getGrossSales() * super.getCommissionRate() + super.getBaseSalery()) * 0.05;
-        return (earnings - tax);
+        System.out.println("扣稅後應付金額: " + (earnings - tax));
     };
 
     @Override

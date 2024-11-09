@@ -1,5 +1,5 @@
 package test;
 
 public abstract class Earning {
-    public abstract void earnings();
+    public abstract double earnings();
 }

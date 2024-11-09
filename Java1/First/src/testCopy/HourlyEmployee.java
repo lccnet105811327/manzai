@@ -1,4 +1,4 @@
-package test;
+package testCopy;
 
 public class HourlyEmployee extends Employee {
     private int wage;
@@ -37,22 +37,22 @@ public class HourlyEmployee extends Employee {
     }
     
     @Override
-    public double earnings() {
+    public void earnings() {
         int earnings = this.wage * this.hours;
-        return earnings;
+        System.out.println("未扣稅所得: " + earnings);
     }
 
     @Override
-    public double getTax() {
+    public void getTax() {
         double tax = this.wage * this.hours * 0.05;
-        return tax;
+        System.out.println("取得稅額: " + tax);
     };
 
     @Override
-    public double getPaymentAmount() {
+    public void getPaymentAmount() {
         int earnings = this.wage * this.hours;
         double tax = this.wage * this.hours * 0.05;
-        return (earnings - tax);
+        System.out.println("扣稅後應付金額: " + (earnings - tax));
     };
 
     @Override

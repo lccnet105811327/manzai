@@ -1,4 +1,4 @@
-package test;
+package testCopy;
 
 public class SalariedEmployee extends Employee {
     private int grossSales;
@@ -52,22 +52,22 @@ public class SalariedEmployee extends Employee {
     }
 
     @Override
-    public double earnings() {
+    public void earnings() {
         double earnings = this.grossSales * this.commissionRate + this.baseSalary;
-        return earnings;
+        System.out.println("未扣稅所得: " + earnings);
     }
 
     @Override
-    public double getTax() {
+    public void getTax() {
         double tax = (this.grossSales * this.commissionRate + this.baseSalary) * 0.05;
-        return tax;
+        System.out.println("取得稅額: " + tax);
     };
 
     @Override
-    public double getPaymentAmount() {
+    public void getPaymentAmount() {
         double earnings = this.grossSales * this.commissionRate + this.baseSalary;
         double tax = (this.grossSales * this.commissionRate + this.baseSalary) * 0.05;
-        return (earnings - tax);
+        System.out.println("扣稅後應付金額: " + (earnings - tax));
     };
 
     @Override

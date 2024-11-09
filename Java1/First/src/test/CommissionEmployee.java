@@ -52,22 +52,22 @@ public class CommissionEmployee extends Employee {
     }
 
     @Override
-    public void earnings() {
+    public double earnings() {
         double earnings = this.grossSales * this.commissionRate + this.baseSalary;
-        System.out.println("未扣稅所得: " + earnings);
+        return earnings;
     }
 
     @Override
-    public void getTax() {
+    public double getTax() {
         double tax = (this.grossSales * this.commissionRate + this.baseSalary) * 0.05;
-        System.out.println("取的稅額: " + tax);
+        return tax;
     };
 
     @Override
-    public void getPaymentAmount() {
+    public double getPaymentAmount() {
         double earnings = this.grossSales * this.commissionRate + this.baseSalary;
         double tax = (this.grossSales * this.commissionRate + this.baseSalary) * 0.05;
-        System.out.println("扣稅後應付金額: " + (earnings - tax));
+        return (earnings - tax);
     };
 
     @Override

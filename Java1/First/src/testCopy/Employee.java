@@ -1,4 +1,4 @@
-package test;
+package testCopy;
 
 public class Employee extends Earning implements IPayable, IInvoice{
     private String name;
@@ -34,26 +34,20 @@ public class Employee extends Earning implements IPayable, IInvoice{
             System.out.println("重設的手機號碼為" + this.mobile);
         }
     }
-    public void callAll(Employee n){
-        System.out.println(n.toString());
-        System.out.println("未扣稅所得: " + n.earnings());
-        System.out.println("取得稅額: " + n.getTax());
-        System.out.println("扣稅後應付金額: " + n.getPaymentAmount()); 
-    }
 
     @Override
-    public double earnings(){
-        return 0;
+    public void earnings(){
+
     };
 
     @Override
-    public double getTax(){
-        return 0;
+    public void getTax(){
+
     };
 
     @Override
-    public double getPaymentAmount(){
-        return 0;
+    public void getPaymentAmount(){
+
     };
     
     @Override
